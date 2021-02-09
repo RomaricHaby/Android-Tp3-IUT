@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:focusableInTouchMode="true"
+    tools:context="Tp4.TP.AjoutContactActivity">
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/BeforeImg"
+                    android:layout_width="71dp"
+                    android:layout_height="65dp"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/leftarrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Avatar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/Avatar"
+                    android:layout_width="186dp"
+                    android:layout_height="163dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="@string/avatar"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <Button
+                    android:id="@+id/NextImg"
+                    android:layout_width="71dp"
+                    android:layout_height="65dp"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/rightarrow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Avatar"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip">
+
+                <Button
+                    android:id="@+id/importPicture"
+                    android:layout_width="55dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="115dip"
+                    android:drawableStart="@android:drawable/ic_menu_gallery" />
+
+                <Button
+                    android:id="@+id/takePicture"
+                    android:layout_width="55dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="70dip"
+                    android:drawableStart="@android:drawable/ic_menu_camera" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/LastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:layout_marginBottom="25dip"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/textName"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/FirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dip"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/textFirstName"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dip"
+                android:autofillHints=""
+                android:focusable="false"
+                android:hint="@string/textBirthday"
+                android:inputType="none" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginBottom="25dip"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/Phone"
+                    android:layout_width="281dp"
+                    android:layout_height="match_parent"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/textPhone"
+                    android:inputType="phone"
+                    android:maxLength="10" />
+
+                <Button
+                    android:id="@+id/buttonValidationSMS"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dip"
+                    android:layout_marginEnd="10dip"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableStart="@drawable/check" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dip"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/textEmail"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/Cap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dip"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/textCap"
+                android:inputType="number"
+                android:maxLength="5" />
+
+            <EditText
+                android:id="@+id/PostalAdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/textPostalAdress"
+                android:inputType="textPostalAddress" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:text="@string/titleChoice" />
+
+            <RadioGroup
+                android:id="@+id/groupRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/WomenButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/choiceWomen" />
+
+                <RadioButton
+                    android:id="@+id/MenButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/choiceMen" />
+
+                <RadioButton
+                    android:id="@+id/OtherButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/choiceOther" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/buttValidation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dip"
+                android:text="@string/buttonValidation" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

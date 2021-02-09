@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/ContactFistName"
+        android:layout_width="135dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="120dp"
+        android:layout_toStartOf="@+id/AvatarContact"
+        android:gravity="center_vertical"
+        android:text="@string/textName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/AvatarContact"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/img" />
+
+</RelativeLayout>

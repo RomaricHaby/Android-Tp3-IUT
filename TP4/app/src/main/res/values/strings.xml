@@ -1,3 +1,56 @@
 <resources>
-    <string name="app_name">TP4</string>
+    <string name="app_name">Contact</string>
+
+
+    <string name="titleChoice">Sexe :</string>
+    <string name="choiceWomen">Women</string>
+    <string name="choiceMen">Men</string>
+    <string name="choiceOther">Other</string>
+
+    <string name="textName">Last name</string>
+    <string name="textFirstName">First name</string>
+    <string name="textBirthday">Birthday</string>
+    <string name="textPhone">Phone</string>
+    <string name="textEmail">Email</string>
+    <string name="textCap">Cap</string>
+    <string name="textPostalAdress">Postal adress</string>
+
+    <string name="avatar">Avatar</string>
+    <string name="buttonValidation">Validation</string>
+
+    <string name="buttonAddContact">Add a contact</string>
+    <string name="img">img</string>
+    <string name="contact_name">contact name</string>
+    <string name="BirthdayText">Birthday</string>
+    <string name="PhoneText">Phone</string>
+    <string name="EmailText">Email</string>
+    <string name="CapText">Cap</string>
+    <string name="AdressPostalText">Adress postal</string>
+    <string name="GenreText">Genre</string>
+
+    <string name="TitleAlert">Confirmation</string>
+    <string name="MessageAlert">Delete contact</string>
+    <string name="PositiveButtonAlert">Yes</string>
+    <string name="NegativeButtonAlert">Cancel</string>
+
+
+    <string name="ErrorEmail">The email is not compliant</string>
+    <string name="ErrorPhone">The phone number is not compliant</string>
+    <string name="ErrorEmpty">Last name, First name, phone are compulsory</string>
+    <string name="Error">Error</string>
+
+
+    <string name="smsSend">SMS Sent!</string>
+    <string name="smsNotSend">SMS not Sent!</string>
+
+    <string name="smsSendMessage">Phone number verification !</string>
+    <string name="smsFaild">Failed to send SMS !</string>
+
+    <string name="deleteFaild">Failed to delete contact !</string>
+
+
+
+
+
+
 </resources>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Contact</string>
+
+
+    <string name="titleChoice">Sexe :</string>
+    <string name="choiceWomen">Femme</string>
+    <string name="choiceMen">Homme</string>
+    <string name="choiceOther">Autre</string>
+
+    <string name="textName">Nom</string>
+    <string name="textFirstName">Prénom</string>
+    <string name="textBirthday">Anniversaire</string>
+    <string name="textPhone">Téléphone</string>
+    <string name="textEmail">Email</string>
+    <string name="textCap">Code postal</string>
+    <string name="textPostalAdress">Adresse</string>
+
+    <string name="avatar">Avatar</string>
+    <string name="buttonValidation">Validation</string>
+
+    <string name="buttonAddContact">Ajouter un contact</string>
+    <string name="img">img</string>
+    <string name="contact_name">contact name</string>
+    <string name="BirthdayText">Anniversaire</string>
+    <string name="PhoneText">"Téléphone "</string>
+    <string name="EmailText">Email</string>
+    <string name="CapText">Code postal</string>
+    <string name="AdressPostalText">Adresse</string>
+    <string name="GenreText">Genre</string>
+
+    <string name="PositiveButtonAlert">Oui</string>
+    <string name="NegativeButtonAlert">Annuler</string>
+    <string name="MessageAlert">Supprimer contact</string>
+    <string name="TitleAlert">Confirmation</string>
+    <string name="ErrorEmail">L\'email n\'est pas conforme</string>
+    <string name="Error">Erreur</string>
+    <string name="ErrorPhone">Le numéro de téléphone n\'est pas conforme</string>
+    <string name="ErrorEmpty">Nom, prénom, téléphone sont obligatoires</string>
+    <string name="smsSend">SMS envoyer !</string>
+    <string name="smsNotSend">SMS pas envoyer !</string>
+    <string name="smsSendMessage">"Verification du numéro de téléphone ! "</string>
+    <string name="smsFaild">Echec de l\'envoie du SMS !</string>
+    <string name="deleteFaild">"Echec de la suppression du contact! "</string>
+</resources>

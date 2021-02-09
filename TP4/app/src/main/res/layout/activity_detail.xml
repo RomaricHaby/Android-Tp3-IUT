@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/AvatarContact"
+                    android:layout_width="169dp"
+                    android:layout_height="140dp"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="19dp"
+                    android:contentDescription="@string/img" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ContactFistName"
+                        android:layout_width="148dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/contact_name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/ContactLastName"
+                        android:layout_width="148dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginEnd="45dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/contact_name"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/BirthdayImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="50dp"
+                    android:contentDescription="@string/contact_name"
+                    app:srcCompat="@drawable/cake" />
+
+                <TextView
+                    android:id="@+id/BirthdayText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"
+                    android:text="@string/BirthdayText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/PhoneImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="50dp"
+                    android:contentDescription="@string/contact_name"
+                    app:srcCompat="@drawable/contacts" />
+
+                <TextView
+                    android:id="@+id/PhoneText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"
+                    android:text="@string/PhoneText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/EmailImg"
+                    android:layout_width="66dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="40dp"
+                    android:contentDescription="@string/img"
+                    app:srcCompat="@drawable/gmail" />
+
+                <TextView
+                    android:id="@+id/EmailText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"
+                    android:text="@string/EmailText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/AdressImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="40dp"
+                    android:contentDescription="@string/img"
+                    app:srcCompat="@drawable/house" />
+
+                <TextView
+                    android:id="@+id/AdressCapText"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"
+                    android:text="@string/CapText" />
+
+                <TextView
+                    android:id="@+id/AdressPostalText"
+                    android:layout_width="102dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"
+                    android:text="@string/AdressPostalText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/GenreImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="60dp"
+                    android:contentDescription="@string/img"
+                    app:srcCompat="@drawable/sex" />
+
+                <TextView
+                    android:id="@+id/GenreText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_weight="1"
+                    android:text="@string/GenreText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
